@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "The Paradise",
+    "image": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D",
+    "description": "In a dystopian future, a man sacrifices everything to save his wife from a sinister corporate plan."
+  },
+  {
+    "id": 2,
+    "name": "Morocco: Love in Times of War",
+    "image": "https://media.istockphoto.com/id/2195755941/photo/happy-family-applauding-in-the-cinema-after-watching-a-movie.webp?a=1&b=1&s=612x612&w=0&k=20&c=oRg0sWzd5WdhvYYfrWhX2ZETaQ68q42TbIifkH1SMT8=",
+    "description": "Set in 1920s Morocco, Spanish nurses open a hospital in the war zone and find love and hardship."
+  },
+  {
+    "id": 3,
+    "name": "The Fighter",
+    "image": "https://images.unsplash.com/photo-1640127249308-098702574176?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D",
+    "description": "A gritty drama based on the true story of boxer Micky Ward and his rise through personal and professional struggles."
+  }
+]
