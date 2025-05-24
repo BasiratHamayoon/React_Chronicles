@@ -1,10 +1,11 @@
 export const SeriesCards = (props) => {
+    const {id, name, description, image} = props.item;
     return (
         <>
-            <li>
-                <img src={props.item.image} alt={props.item.name} />
-                <h1>Name: {props.item.name}</h1>
-                <p>Description: {props.item.description}</p>
+            <li key={id}>
+                <img src={image} alt={name} />
+                <h1>Name: {name}</h1>
+                <p>Description: {description}</p>
             </li>
         </>
     )
