@@ -1,0 +1,53 @@
+.light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+.parent_div{
+    background-color: rgb(230, 224, 224);
+    box-shadow: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.switch{
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 253, 250);
+    transition: transform 0.3s linear, background-color 0.3s linear;
+}
+.Text{
+    color: aliceblue;
+}
+.on{
+    background-color: green;
+    transform: translateX(100px);
+}
+.off{
+    background-color: red;
+    transform: translateX(0);
+}

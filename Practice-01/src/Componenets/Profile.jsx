@@ -6,6 +6,7 @@ export const Profile = () => {
         <>
            <ProfileChild name = {name} age= {age}>
             <p>Hello Alice</p>
+            <h1>Welcome</h1>
            </ProfileChild>
         </>
     )
