@@ -36,6 +36,19 @@ export const Todo = () => {
        return () => clearInterval(interval)
  }, [])
 
+ // Delete specific task
+ const handleDeleteTask = (value) => {
+    console.log(value);
+    const deleteTask = text.filter((item) => item!== value);
+    setText(deleteTask)
+}
+
+//Delete All tasks
+
+const handleDeleteAllTasks = () => {
+    setText([])
+}
+
 
     return (
         <>
@@ -74,14 +87,18 @@ export const Todo = () => {
                                     <span>{item}</span>
                                      <div className="icons">
                                          <FaCheckCircle  />
-                                         <FaTrash />
+                                         <FaTrash onClick={() => handleDeleteTask(item)} />
                                      </div>
                                 </li>
                             )})
                         }
                      </ul>
                 </section>
+                <section>
+                    <button onClick={handleDeleteAllTasks} className="clear-btn">Clear All</button>
+                </section>
             </section>
+            
         </>
     )
 }
