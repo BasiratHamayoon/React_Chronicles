@@ -1,0 +1,101 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: rgb(85, 129, 223);;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+.form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.todo_input{
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+.todo_button{
+    padding: 15px 0px;
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(85, 129, 223);
+    transition:backgroun-color 3.5 ease;
+    cursor: pointer;
+}
+.todo_button:hover{
+    background-color: rgb(54, 102, 206);
+}
+.Input-div{
+    display: flex;
+    width: 50%;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow: 0px 6px 8px gray;
+}
+.un-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%; ;
+}
+.un-list li{
+    padding: 15px;
+    outline: none;
+    width: 50%;
+    border: none;
+    background-color:rgb(85, 129, 223);
+    border-radius: 10px; 
+    list-style-type: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.calender{
+    font-size: 16px;
+    color: rgb(85, 129, 223);
+    border-bottom: 1px solid rgb(85, 129, 223);
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width: 700px){
+   .un-list li{
+      width: 90%;
+   }
+   .Input-div{
+     width: 90%;
+   } 
+}
