@@ -61,7 +61,7 @@
     padding: 20px;
     width: 100%; ;
 }
-.un-list li{
+.todoItem{
     padding: 15px;
     outline: none;
     width: 50%;
@@ -74,6 +74,12 @@
     margin: 10px 0px;
     display: flex;
     justify-content: space-between;
+}
+.decor{
+    text-decoration: line-through;
+}
+.not_decore{
+    text-decoration: none;
 }
 .icons{
     display: flex;
@@ -106,6 +112,11 @@
     background-color: rgb(85, 129, 223);
     color: white;
 }
+.check{
+    color: rgb(85, 129, 223);
+    background-color: aliceblue;
+}
+
 @media (max-width: 700px){
    .un-list li{
       width: 90%;

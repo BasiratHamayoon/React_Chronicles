@@ -1,17 +1,17 @@
-import "./Todo.css"
+import "./Todo.css";
 import { useState } from "react";
 export const TodoForm = ({onAddTodo}) => {
-      const [inputValue, setInputValue] = useState("");
+      const [inputValue, setInputValue] = useState({});
 
        const handleInputChange = (value) => {
-        setInputValue(value);
+        setInputValue({id:value, content:value, checked:true});
         // console.log(inputValue)
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
         onAddTodo(inputValue);
-         setInputValue("")
+        setInputValue({ id: "", content: "", checked: false })
     }
     return (
         <>
@@ -21,7 +21,7 @@ export const TodoForm = ({onAddTodo}) => {
                         <input type="text"
                         className="todo_input" 
                         autoComplete="off"
-                        value={inputValue} 
+                        value={inputValue.content} 
                         onChange={(event) => handleInputChange (event.target.value)}
                         placeholder="Enter Task" />
                         <div>

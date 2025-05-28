@@ -16,7 +16,7 @@ export const TodoDateTime = () => {
         <>
                 <div className="icon">
                     <IoCalendarSharp />
-                        <h3>{dateTime} </h3>
+                        <h3>{dateTime}</h3>
                 </div>
         </>
     )
