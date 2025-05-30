@@ -1,12 +1,12 @@
-import './App.css'
-import { RegistrationForm } from './Componenets/RegisterationForm'
+import './App.css';
+import { LoginForm } from './Componenets/LoginForm';
 
 function App() {
  
 
   return (
     <>
-      <RegistrationForm />
+        <LoginForm />
     </>
   )
 }
