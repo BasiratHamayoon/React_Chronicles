@@ -5,18 +5,31 @@ export const PookiemoonApi = () => {
     const [ loading, setLoading ] = useState(true);
     const [ error, setError ] = useState()
     const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
-    const fetchData = () => {
-        fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-            setApiData(data);
+    // const fetchData = () => {
+    //     fetch(url)
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //         setApiData(data);
+    //         setLoading(false);
+    //     })
+    //     .catch((error) => {
+    //         console.log(error);
+    //         setError(error.message);
+    //         setLoading(false)
+    //     });
+    // }
+    const fetchData =  async () => {
+        try {
+            const res = await fetch(url);
+            const data = await res.json();
+             setApiData(data);
             setLoading(false);
-        })
-        .catch((error) => {
+
+        } catch(error) {
             console.log(error);
             setError(error.message);
             setLoading(false)
-        });
+        };
     }
     useEffect(() => {
             fetchData();
