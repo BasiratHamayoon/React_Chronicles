@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
-import { createPost } from "../API/PostApi";
+import { createPost, updatePost } from "../API/PostApi";
 
-export const PostForm = ({ data, setData, update}) => {
+export const PostForm = ({ data, setData, update, setUpdate}) => {
     const [addPost, setAddPost] = useState({
         title: "",
         body: ""
     });
+    const isEmpty = Object.keys(update).length === 0;
     useEffect (() => {
         update && setAddPost({
             title: update.title || "",
@@ -29,9 +30,28 @@ export const PostForm = ({ data, setData, update}) => {
             setAddPost({ title: "", body: ""});
         }
     }
+    const upadatePostData = async() => {
+        const res = await updatePost(update.id, addPost);
+        console.log(res.data);
+        if (res.status === 200) {
+            setData((prev) => {
+            return prev.map((item) => {
+                return item.id === res.data.id ? res.data : item
+            })
+        })
+        setAddPost({ title: "", body: ""});
+        setUpdate({})
+        }
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
-        addPostData();
+        const acton = e.nativeEvent.submitter.value
+        if (acton === "Add") {
+             addPostData();
+        } else if (acton === "Edit") {
+            upadatePostData();
+        }
+       
     }
     return (
         <>
@@ -51,7 +71,7 @@ export const PostForm = ({ data, setData, update}) => {
                   value={addPost.body}
                  onChange={handleAddData}
                  className="bg-white outline-none px-2 lg:w-[300px] py-2" />
-                 <button type="submit" className="px-6 py-2 text-gray-900 bg-green-600 cursor-pointer hover:text-white">Add</button>
+                 <button type="submit" className="px-6 py-2 text-gray-900 bg-green-600 cursor-pointer hover:text-white" value={isEmpty? "Add" : "Edit"}>{isEmpty? "Add" : "Edit"}</button>
             </form>
         </>
     )

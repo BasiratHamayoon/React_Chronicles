@@ -11,4 +11,7 @@ export const deletePost = (id) => {
 }
 export const createPost = (post) => {
     return api.post('/posts', post)
+};
+export const updatePost = (id, post) => {
+    return api.patch(`/posts/${id}`, post)
 }
