@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "What programs are offered at IBMS?",
+    "answer": "IBMS offers degree programs including BS.IT, BS.CS, BS.BBA, MBA, and MS in Management Sciences."
+  },
+  {
+    "id": 2,
+    "question": "How can I apply for admission?",
+    "answer": "You can apply online through the university’s official admission portal by submitting the required documents before the deadline."
+  },
+  {
+    "id": 3,
+    "question": "What are the eligibility criteria for BS programs?",
+    "answer": "Applicants must have completed their intermediate or equivalent qualification with a minimum of 45% marks."
+  },
+  {
+    "id": 4,
+    "question": "Is there an entry test for admission?",
+    "answer": "Yes, an entry test is conducted by the university for certain programs. Admission is based on test performance and academic merit."
+  },
+  {
+    "id": 5,
+    "question": "How can students access timetables and exam schedules?",
+    "answer": "Students can log into the student portal or visit the Timetables and Exams section of the website to download the latest schedules."
+  },
+  {
+    "id": 6,
+    "question": "Are scholarship opportunities available?",
+    "answer": "Yes, both merit-based and need-based scholarships are offered to eligible students."
+  }
+]
